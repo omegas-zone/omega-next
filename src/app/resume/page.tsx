@@ -55,16 +55,20 @@ export default function Resume(): JSX.Element {
                 product. I like to get to know the latest technologies in development, including hardware, frameworks,
                 the newest trends in PHP and CSS, Typography. Furthermore I like woodworking, creating music and I am
                 volunteering as a swimming instructor, which I started right after I got my swimming certificates for a
-                total of 18 years.
+                total of around 20 years.
             </p>
             <h2>Portfolio</h2>
             <p>
-                I have made a lot of websites during my life, a couple of which are still live today:
+                This website is part of my portfolio and primarily showcases the music I produce. While the design
+                intentionally prioritizes creativity and artistic expression over conventional UX patterns, this is a
+                conscious choice rather than a reflection of my technical approach. It also includes my travel blog and
+                several DIY projects. Below are some additional websites I have created that are still online today.
+
             </p>
             <ul>
                 <li>
-                    <a href="https://swimmer.ome.gs">Swimmer</a> my previous website where my current site is heavily
-                    based on. Most of the sections have moved to my current website, but left a couple behind.
+                    <a href="https://weerbaar.ome.gs">Weerbaar Worden</a> a website that I made for a friend, which was
+                    meant to be child friendly.
                 </li>
                 <li>
                     <a href="https://blackhole.ome.gs">Black Hole</a> being a music project that I have had with a
@@ -72,10 +76,6 @@ export default function Resume(): JSX.Element {
                 </li>
                 <li>
                     <a href="https://index.ome.gs">Index</a> is band website of a couple of friends.
-                </li>
-                <li>
-                    <a href="https://weerbaar.ome.gs">Weerbaar Worden</a> a website that I made for a friend, which was
-                    meant to be child friendly.
                 </li>
             </ul>
             <h2>Skills</h2>

@@ -83,7 +83,7 @@ export default function Timeline(): JSX.Element {
                     <span className="timeline__dot"></span>
                     <span className="timeline__meta">
                         <time className="timeline__date" dateTime="2011-06">
-                            <span className="tag">job</span> June 2011 - July 2019
+                            <span className="tag">job</span> July 2010 - July 2019
                         </time><br/>
                         <strong className="timeline__title">
                             Medusa Media Usage Advice, Eindhoven
@@ -111,7 +111,7 @@ export default function Timeline(): JSX.Element {
                     <span className="timeline__dot"></span>
                     <span className="timeline__meta">
                         <time className="timeline__date" dateTime="2010-05">
-                            <span className="tag">job</span>  May 2010 - June 2010
+                            <span className="tag">job</span> May 2010 - June 2010
                         </time><br/>
                         <strong className="timeline__title">BliXem Internet, Nijmegen</strong>
                     </span>
