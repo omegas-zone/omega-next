@@ -181,13 +181,24 @@
 			content: "#5";
 		}
 		&:nth-of-type(6):before {
-			content: "Set";
+			content: "#6";
 		}
 		&:nth-of-type(7):before {
-			content: "Latest";
+			content: "#7";
 		}
-		&:nth-of-type(6),
-		&:nth-of-type(7) {
+		&:nth-of-type(8):before {
+			content: "#8";
+		}
+		&:nth-of-type(9):before {
+			content: "#9";
+		}
+		&:nth-of-type(10):before {
+			content: "#10";
+		}
+		&:nth-of-type(11):before {
+			content: "Set";
+		}
+		&:nth-of-type(11) {
 			margin-top: 16px;
 		}
 	}
