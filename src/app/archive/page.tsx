@@ -56,7 +56,7 @@ export default async function Archive(): Promise<JSX.Element> {
             <p>
                 I&#39;ve written a couple of tutorials, mostly for documentation purposes. Currently this website is running
                 on Next.js, which is getting the data through an API. This way I can use Laravel with Filament to make
-                my website more dynamic. A tutorial on that might follow soon. Contact me on <a href="mailto:i@ome.gs">i@ome.gs</a>.
+                my website more dynamic. A tutorial on that might follow soon.
             </p>
             <ul>
                 {tutorials.map((tutorial: Blog, index: number) => (
