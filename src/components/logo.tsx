@@ -1,4 +1,5 @@
 import { JSX } from 'react';
+
 import './logo.scss';
 
 export default function Logo(): JSX.Element {

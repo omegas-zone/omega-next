@@ -1,11 +1,14 @@
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import { Metadata } from 'next';
-import { Footer, Hexagons, Menu, Music } from '@/components';
-import './_scss/_page.scss';
-import { API_URL } from '@/lib/api';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+
+import { Footer, Hexagons, Menu, Music } from '@/components';
+import { API_URL } from '@/lib/api';
+
 import type { Intro } from '@/types/all';
+
+import './_scss/_page.scss';
 
 export const metadata: Metadata = {
     title: 'Ω - Home',
@@ -35,8 +38,9 @@ export default async function Home(): Promise<JSX.Element> {
 
     return (<main className="home">
         <Menu active="home"/>
-        <Hexagons />
+        <Hexagons/>
         <div className="content-column">
+            <h1>Home</h1>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {intro ? intro[0]?.content : 'No intro available'}
             </ReactMarkdown>

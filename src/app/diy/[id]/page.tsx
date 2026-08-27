@@ -1,9 +1,12 @@
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import { notFound } from 'next/navigation';
+
 import { BlogClient, Footer, Hexagons, Menu } from '@/components';
-import '../../_scss/_page.scss';
 import { API_URL } from '@/lib/api';
+
 import type { Blog, Gallery } from '@/types/all';
+
+import '../../_scss/_page.scss';
 
 type Props = {
     params: Promise<{ id: string }>;
@@ -36,8 +39,7 @@ export default async function DIYPage({ params }: Props): Promise<JSX.Element> {
     return (
         <main>
             <Menu active="diy" />
-            <Hexagons />
-
+            <Hexagons/>
             <div className="content-column">
                 <h1>{diy.title}</h1>
                 <em>Published at: {new Intl.DateTimeFormat('en-GB', {
@@ -51,7 +53,6 @@ export default async function DIYPage({ params }: Props): Promise<JSX.Element> {
                     galleries={diy.galleries as Gallery[]}
                 />
             </div>
-
             <Footer />
         </main>
     );

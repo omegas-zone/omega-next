@@ -1,6 +1,6 @@
 import { JSX } from 'react';
 import { Metadata } from 'next';
-import { Hexagons } from '@/components';
+
 import './_scss/not-found.scss';
 
 export const metadata: Metadata = {
@@ -20,7 +20,6 @@ export default function NotFound(): JSX.Element {
                     <span>4</span>
                 </h1>
             </div>
-            <Hexagons />
         </div>
     </main>);
 }

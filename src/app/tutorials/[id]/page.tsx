@@ -1,9 +1,12 @@
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import { notFound } from 'next/navigation';
+
 import { BlogClient, Footer, Hexagons, Menu } from '@/components';
-import '../../_scss/_page.scss';
 import { API_URL } from '@/lib/api';
+
 import type { Blog, Gallery } from '@/types/all';
+
+import '../../_scss/_page.scss';
 
 type Props = {
     params: Promise<{ id: string }>;
@@ -35,9 +38,8 @@ export default async function BlogPage({ params }: Props): Promise<JSX.Element> 
 
     return (
         <main>
-            <Menu active="travels" />
-            <Hexagons />
-
+            <Menu active="tutorials" />
+            <Hexagons/>
             <div className="content-column">
                 <h1>{blog.title}</h1>
                 <em>Published at: {new Intl.DateTimeFormat('en-GB', {
@@ -51,7 +53,6 @@ export default async function BlogPage({ params }: Props): Promise<JSX.Element> 
                     galleries={blog.galleries as Gallery[]}
                 />
             </div>
-
             <Footer />
         </main>
     );

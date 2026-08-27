@@ -1,9 +1,12 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import './music.scss';
+
 import { STORAGE_URL } from '@/lib/api';
+
 import type { Section } from '@/types/all';
+
+import './music.scss';
 
 function formatTime(seconds: number | null): string {
     if (seconds == null || Number.isNaN(seconds)) return '';

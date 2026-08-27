@@ -1,9 +1,9 @@
 import React, { JSX } from 'react';
-import localFont from 'next/font/local'
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
+
 import { EasterEgg } from '@/components';
+
+import type { Metadata, Viewport } from 'next';
 
 export const metadata: Metadata = {
     title: 'Ω',
@@ -27,10 +27,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <EasterEgg />
         <body>
             {children}
-            <div style={{minHeight: '50px'}}>
-                <Analytics/>
-                <SpeedInsights/>
-            </div>
         </body>
     </html>);
 }

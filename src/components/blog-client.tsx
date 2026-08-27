@@ -6,10 +6,10 @@ import remarkGfm from 'remark-gfm';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atelierForestDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import type { Gallery, Heading } from '@/types/all';
 
 import Carousel from './carousel';
-import HexGallery from './hex-gallery';
+
+import type { Gallery, Heading } from '@/types/all';
 
 import './blog-client.scss';
 
@@ -106,14 +106,6 @@ export default function BlogClient({ source, galleries }: Props) {
                     }
                     if (type === 'carousel') {
                         return (<Carousel key={index} images={gallery.images}/>);
-                    }
-                    if (type === 'hex') {
-                        return (
-                            <HexGallery
-                                key={index}
-                                images={gallery.images}
-                            />
-                        );
                     }
                 }
 

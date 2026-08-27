@@ -1,5 +1,6 @@
 import { MusicClient } from '../components';
 import { API_URL } from '@/lib/api';
+
 import type { Section } from '@/types/all';
 
 async function getMusic(): Promise<Section[]> {
