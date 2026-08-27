@@ -44,7 +44,7 @@ export default async function Tutorials() {
                 <ul>
                     {tutorials.map((tutorial: Blog, index: number) => (
                         <li key={index}>
-                            <Link href={'tutorial/' + tutorial.slug} title={tutorial.posted}>
+                            <Link href={'tutorials/' + tutorial.slug} title={tutorial.posted}>
                                 {tutorial.title}
                             </Link>
                             {tutorial.description}
