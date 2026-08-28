@@ -7,6 +7,8 @@ import { API_URL } from '@/lib/api';
 
 import type { Blog } from '@/types/all';
 
+import '../_scss/_page.scss';
+
 export const metadata: Metadata = {
     title: 'Ωmega - Tutorials',
     description: '',

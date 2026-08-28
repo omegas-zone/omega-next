@@ -7,6 +7,8 @@ import { API_URL } from '@/lib/api';
 
 import type { Blog } from '@/types/all';
 
+import '../_scss/_page.scss';
+
 export const metadata: Metadata = {
     title: 'Ωmega - DIY',
     description: '',
@@ -37,10 +39,11 @@ export default async function DIT() {
             <Hexagons/>
             <div className="content-column">
                 <h1>DIY</h1>
+                <p>You can find my DIY projects on my new website:</p>
                 <ul>
                     {diy.map((diy: Blog, index: number) => (
                         <li key={index}>
-                            <Link href={'diy/' + diy.slug} title={diy.posted}>
+                            <Link href={'https://ome.gs/diy/' + diy.slug} title={diy.posted}>
                                 {diy.title}
                             </Link>
                             {diy.description}
