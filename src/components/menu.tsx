@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import Link from 'next/link';
 
-import './menu.scss';
+import './_scss/menu.scss';
 
 type Props = {
 	active?: 'home' | 'diy' | 'tutorials' | 'blog' | 'bookmarks'

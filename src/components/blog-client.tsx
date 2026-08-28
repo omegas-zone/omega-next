@@ -11,7 +11,7 @@ import Carousel from './carousel';
 
 import type { Gallery, Heading } from '@/types/all';
 
-import './blog-client.scss';
+import './_scss/blog-client.scss';
 
 type Props = {
     source: string;

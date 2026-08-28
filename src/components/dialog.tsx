@@ -3,7 +3,7 @@
 import { useRef, useEffect, JSX } from 'react';
 import Link from 'next/link';
 
-import './dialog.scss';
+import './_scss/dialog.scss';
 
 export default function Dialog(): JSX.Element {
     const dialogRef = useRef<HTMLDialogElement | null>(null);

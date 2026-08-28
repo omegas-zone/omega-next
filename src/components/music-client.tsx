@@ -6,7 +6,7 @@ import { STORAGE_URL } from '@/lib/api';
 
 import type { Section } from '@/types/all';
 
-import './music.scss';
+import './_scss/music.scss';
 
 function formatTime(seconds: number | null): string {
     if (seconds == null || Number.isNaN(seconds)) return '';

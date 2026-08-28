@@ -9,7 +9,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
-import './carousel.scss';
+import './_scss/carousel.scss';
 
 type Props = {
 	images?: string[];

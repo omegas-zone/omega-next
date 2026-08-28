@@ -1,6 +1,6 @@
 import { JSX } from 'react';
 
-import './hexagons.scss';
+import './_scss/hexagons.scss';
 
 export default function Hexagons(): JSX.Element {
     return (<>

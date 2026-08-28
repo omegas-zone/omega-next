@@ -5,7 +5,7 @@ import { API_URL, STORAGE_URL } from '@/lib/api';
 
 import type { Social } from '@/types/all';
 
-import './social.scss';
+import './_scss/social.scss';
 
 type Props = {
     location: string
